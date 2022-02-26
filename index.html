@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGTECH</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+    <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+    <enlace href="https: //fonts.googleapis.com/css2? family= Oswald:wght@200;300;400;500;600;700 & family= Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700; 1100;1200;1300;1400;1500;1600 & display=swap" rel="hoja de estilo">
+</head>
+<body>
+
+    <header>
+        <a href="">
+            <img class="imgBrund" src="./pictures/brund.svg" alt="logo">
+        </a>
+        <nav class="nav">
+            <a href="" class="nav__link" id="style-2">HERO</a>
+            <a href=""class="nav__link">NEWS</a>
+            <a href=""class="nav__link">ARTICLES</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="callToAction">
+            <img class="brundCTA" src="./pictures/brundWhite.png">
+            <h1 class="titleCTA">BLACK MESA</h1>  
+            <h2 class="subTitleCTA">RESEARCH FACILITY</h2>
+            <p class="txtCTA">“Working to make a better
+                tomorrow for all mankind”</p>
+            <button href="" class="moreInfoCTA info">MORE INFORMATION</button>      
+        </section>
+
+        <section class="sectionCards">
+            <div class="divtitleCards">
+                <div class="divTitle">
+                    <div class="rectCh"></div>
+                    <div class="rectGr"></div>
+                    <h2>LAST NEWS</h2>
+                </div>
+                <a href="">
+                    <h3 class="viewMore"> VIEW MORE</h3>
+                </a>
+            </div>
+            <div id="cards" class="cardGrid"></div>
+        </section>
+
+        <section>
+            <div>
+                <div class="divTitleSearch">
+                    <h2>MORE ARTICLES</h2>
+                    <input id="buscar" type="text" class="search" placeholder="Search articles..." />
+                
+                    <table id="tabla" class="table">
+                        <thead class="titleTable" id="titletable">
+                            <th class="thName"> NAME  </th>
+                            <th >DESCRIPTION</th>
+                            <th>DATE</th>
+                        </thead>
+                        <tbody id="tbRow" class="bodyTable"></tbody>
+                    </table>
+                </div>
+        
+                <div >     
+                    <ul  class="pagination">
+                        <li onclick="printTable(0, 10)">1</li>
+                        <li onclick="printTable(11, 20)">2</li>
+                        <li onclick="printTable(21, 30)">3</li>
+                        <li onclick="printTable(31, 40)">4</li>
+                        <li onclick="printTable(41, 50)">5</li>
+                        <li onclick="printTable(51, 60)">6</li>
+                        <li onclick="printTable(61, 70)">7</li>
+                        <li onclick="printTable(71, 80)">8</li>
+                        <li onclick="printTable(81, 90)">9</li>
+                        <li onclick="printTable(91, 100)">10</li>
+                    </ul>
+                </div>     
+            </div>       
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
