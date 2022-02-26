@@ -56,7 +56,7 @@ const printTable = (start, end) => {
         return `
             <tr>
                 <td >${item.title.substring(0, 18)}...</td>
-                <td class="descriptionTable">${item.short_description}</td>
+                <td class="descriptionTable">${item.short_description.substring(0, 185)}</td>
                 <td class="dateTable">${moment(item.published_at.date).format('DD/MM/YY')}</td>
             </tr>
         `;
